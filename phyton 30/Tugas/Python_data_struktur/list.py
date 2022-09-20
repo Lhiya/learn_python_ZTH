@@ -23,3 +23,12 @@ anime.append(new_movie) #method append
 print(f"List Movie Terkini : {anime}")
 
 #menambah data dengan menggunakan method insert ()
+new_movie2 = "Big Foot"
+anime.insert(3,new_movie2)
+print(f"Jadwal Movie Terbaru : {anime}")
+
+#Update
+kaset_paling_baru = "Percy Jackson"
+anime[0] = kaset_paling_baru
+print(f"Jadwal Movie Terbaru 2 : {anime}")
+
