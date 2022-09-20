@@ -28,7 +28,28 @@ anime.insert(3,new_movie2)
 print(f"Jadwal Movie Terbaru : {anime}")
 
 #Update
+#Mengubah item dalam sebuah array
 kaset_paling_baru = "Percy Jackson"
 anime[0] = kaset_paling_baru
 print(f"Jadwal Movie Terbaru 2 : {anime}")
+
+matrik = [[8, 4, 3], [-5, 6, 2], [7, 9, -8]]
+print(f"Matrix : {matrik}")
+print(f"{matrik[1][2]}")
+matrik[1][2] = 1
+print(f"Matrix : {matrik}")
+
+#Delete
+#Methods --> pop(), remove(), clear()
+#1. Menghapus data pada ururtan terakhir --> pop()
+anime.pop()
+print(f"List movie setelah dihapus menggunakan method pop : {anime}")
+
+#2. Menghapus data pada spesifik item menggunakan methode remove()
+anime.remove("bos baby")
+print(f"List movie setelah dihapus menggunakan method remove : {anime}")
+
+anime.clear()
+print(f"List movie setelah dihapus menggunakan method clear : {anime}")
+
 
