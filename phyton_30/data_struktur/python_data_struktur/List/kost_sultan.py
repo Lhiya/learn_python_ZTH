@@ -1,20 +1,24 @@
 
-#password = ['kopinikmatnyamandilambung', 'asikasikjos']
-permintaan_security1 = "kopinikmatnyamandilambung"
-permintaan_security2 = 'asikasikjos'
+kuncai = ['kopinikmatnyamandilambung', 'asikasikjos']
+
+print("---- Selamat Datang Di Kost Sultan -----")
 
 password = str(input("Silahkan Masukkan Password : " ))
 
+lock = True
 
-for x in range(len(password)):
-        if permintaan_security1 == password:
-                print(f"--Silahkan masuk ke kost sultan--")
-                break
-        elif permintaan_security2 == password:
-                print(f"--Silahkan masuk ke kost sultan--")
-                break
+for k in kuncai:
+        if k == password:
+                lock = False
         else:
-                print(f"Anda Tidak diperbolehkan masuk")
-                break
+                lock = True
+
+if lock == False:
+        print("password yang anda masukkan benar")
+        print("Silahkan Masuk")
+else:
+        print("Password yang anda masukkan salah")
+        print("Anda tidak diperbolehkan masuk")
+
 
 
