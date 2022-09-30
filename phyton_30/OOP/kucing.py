@@ -6,6 +6,11 @@ class Kucing:
     warna_mata = None
     umur = None
 
+    def get_nama(self):
+        print(self.nama)
+
+    def deskripsi(self):
+        print(f"Kucing bernama {self.nama} dengan warna mata {self.warna_mata} berumur {self.umur}")
     def bersuara(self):#method/berhaviour
         print("meoww")
 
@@ -18,6 +23,10 @@ class Kucing:
     def tidur(self):
         print("Kucing sedang tidur")
 
+    def tambah_umur(self):
+        self_umur = self.umur+1
+        print("umur Omar bertambah 1 tahun")
+
 #instanciate/mencetak
 k1 = Kucing()
 k2 = Kucing()
@@ -29,12 +38,12 @@ k1.nama = "Kitty"
 k1. warna_mata = "biru"
 k1.warna_bulu = "putih"
 k1.ekor ="panjang"
-k1.umur="Bulan"
+k1.umur= 5
 k2.nama = "Omaar"
 k2.warna_bulu = "Hitam"
 k2.warna_mata = "hijau"
 k2.ekor="pendek"
-k2.umur = "Bulan"
+k2.umur = 6 
 
 #mengakases atribut
 print(k1.nama)
@@ -49,35 +58,9 @@ k2.bersuara()
 k2.makan()
 k2.bermain()
 
-#modelkan object lain di dunia nyata
-class Tas:
-    model = None
-    warna = None
-    merk = None
-    ukuran = None
-    jenis_lapisan =None
-
-    def manfaat():
-        print("untuk mengbawa barang pribadi")
-
-    def appearance():
-        print("Tas terlihat cantik dan lucu")
-
-
-ts1 = Tas
-
-ts1.model = "Backpack"
-ts1.warna = "Pink"
-ts1.merk = "Guess"
-ts1.ukuran = "sedang"
-ts1.jenis_lapisan = "PVC"
-
-print(ts1.model)
-print(ts1.warna)
-print(ts1.merk)
-print(ts1.ukuran)
-ts1.manfaat()
-ts1.appearance()
-
+#k2.get_nama()
+k2.deskripsi()
+k2.tambah_umur()
+k2.deskripsi()
 
 
