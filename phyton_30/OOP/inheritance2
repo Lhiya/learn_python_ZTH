@@ -1,0 +1,30 @@
+#inheritance
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length*self.width
+
+    def perimeter(self):
+        return 2 * self.length + 2 * self.width
+
+#here we declare that the square class inheritance from rectangle class
+class Square(Rectangle):
+    def __init__(self, length):
+        super().__init__(length, length)
+
+    def keliling(self):
+        keliling = 6 *self.length
+        return keliling
+
+r1 = Rectangle(12,4)
+print(r1.area())
+
+#square1 = Square(5)
+#print(square1.area())
+#print(square1.keliling())
+
+
+    

@@ -15,6 +15,10 @@ class Segitiga():
     alas = None
     tinggi = None
 
+    def __init__(self, alas, tinggi):
+        self.alas = alas
+        self.tinggi = tinggi
+        
     def luas(self):
         luas = 1/2*self.alas*self.tinggi
         return luas
@@ -26,3 +30,13 @@ class Persegipanjang():
     def luas(self):
         luas = self.panjang*self.lebar
         return luas
+
+s = Segitiga(2,3)
+print(s.luas())
+
+#persegi_panjang = Persegipanjang(2,3)
+#print(persegi_panjang.luas())
+
+
+
+
