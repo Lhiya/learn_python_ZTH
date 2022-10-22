@@ -21,3 +21,5 @@ print("Kasir:", kasir1)
 print("Tipe Laundry:", tipe_laundry1)
 print("Tipe Layanan:", tipe_layanan1)
 
+
+
